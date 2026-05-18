@@ -11,6 +11,9 @@ repositories {
 
 dependencies {
     testImplementation(kotlin("test"))
+    // PROBE-SCA-001
+    implementation("com.google.guava:guava:27.0-jre")
+    implementation("org.apache.commons:commons-text:1.9")
 }
 
 tasks.test {
